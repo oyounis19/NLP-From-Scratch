@@ -12,9 +12,9 @@ Welcome to **NLP-From-Scratch**! 🌟 This is your ultimate playground for divin
 2. [Repository Structure](#repository-structure)
 3. [Getting Started](#getting-started)
 4. [Projects](#projects)
-5. [Advanced Language Model](#advanced-language-model)
-6. [Contributing](#contributing)
-7. [Acknowledgements](#acknowledgements)
+5. [Contributing](#contributing)
+6. [Acknowledgements](#acknowledgements)
+<!-- 5. [Advanced Language Model](#advanced-language-model) -->
 
 ## Introduction
 
@@ -132,7 +132,7 @@ You're all set! 🎉
         - **Key Techniques:** Multi-Task Learning, Shared Representations.
         - **Tools:** PyTorch.
 
-## Advanced Language Model
+<!-- ## Advanced Language Model
 
 In addition to this repository, we have another project dedicated to building a small language model (LLM) from scratch. This comprehensive project covers:
 
@@ -141,7 +141,7 @@ In addition to this repository, we have another project dedicated to building a 
 - **Finetuning:** Adapt the model for specific tasks like sentiment analysis, named entity recognition, and more.
 - **Integration with RAG:** Implement a Retrieval-Augmented Generation (RAG) system to enhance the model's capabilities using external knowledge.
 
-You can find the detailed project [here](https://github.com/oyounis19/LLM-from-scratch). 🌐✨
+You can find the detailed project [here](https://github.com/oyounis19/LLM-from-scratch). 🌐✨ -->
 
 ## Contributing
 
