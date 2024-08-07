@@ -156,5 +156,5 @@ Contributions are welcome! If you'd like to contribute to this repository, pleas
 If you find any issues or have suggestions for new projects, feel free to open an issue or submit a pull request. Let's learn and grow together! 🌟
 
 <p align="center">
-  <em style="font-size: 1.2em">As always, AI is just statistics on steroids :)</em>
+  <em style="font-weight: bold;">As always, AI is just statistics on steroids :)</em>
 </p>
