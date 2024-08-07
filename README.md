@@ -13,7 +13,6 @@ Welcome to **NLP-From-Scratch**! 🌟 This is your ultimate playground for divin
 3. [Getting Started](#getting-started)
 4. [Projects](#projects)
 5. [Contributing](#contributing)
-6. [Acknowledgements](#acknowledgements)
 <!-- 5. [Advanced Language Model](#advanced-language-model) -->
 
 ## Introduction
@@ -156,8 +155,6 @@ Contributions are welcome! If you'd like to contribute to this repository, pleas
 
 If you find any issues or have suggestions for new projects, feel free to open an issue or submit a pull request. Let's learn and grow together! 🌟
 
-## Acknowledgements
-
-<p style="text-align: center; font-family: 'Georgia', serif; font-size: 24px; color: #fff; margin-top: 40px;">
-  <em>As always, AI is just statistics on steroids :)</em>
+<p align="center">
+  <em style="font-size: 1.2em">As always, AI is just statistics on steroids :)</em>
 </p>
