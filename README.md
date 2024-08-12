@@ -65,79 +65,74 @@ You're all set! 🎉
     Learn essential text preprocessing techniques such as tokenization, stemming, lemmatization, stop word removal, and text normalization.
         - **Objective:** Transform raw text into a format suitable for NLP tasks.
         - **Key Techniques:** Tokenization, Stopword Removal, Stemming, Lemmatization, Text Normalization, and Augmentation.
-        - **Tools:** NLTK.
+        - **Tools:** `NLTK`.
 
     - [**Text Augmentation: 🧹**](1.%20Basics/text-augmentation)  
     Augment text data using various techniques such as synonym replacement, random insertion, random deletion, and random swap.
         - **Objective:** Increase the size and diversity of text data for training NLP models.
         - **Key Techniques:** Synonym  Replacement, Random Insertion, Random Deletion, Random Swap.
-        - **Tools:** NLTK.
+        - **Tools:** `NLTK`.
 
     - [**Word Embeddings: 🧠**](1.%20Basics/word-embeddings)  
     Explore word embeddings and their applications in NLP, including word2vec, GloVe, and fastText.
         - **Objective:** Represent words as dense vectors to capture semantic relationships.
         - **Key Techniques:** Word2Vec, GloVe, fastText.
-        - **Tools:** Gensim, Glove, Scikit-learn, PCA.
+        - **Tools:** `Gensim`, `Glove`, `Scikit-learn`, `PCA`.
 
     - [**Text Classification: 📊**](1.%20Basics/text-classification)  
-    Build a text classifier using machine learning algorithms and evaluate its performance on a dataset.
-        - **Objective:** Classify text documents into predefined categories.
+    Create a text classifier using machine learning algorithms and assess its performance on the IMDb dataset. You'll explore and compare Bag-of-Words (BoW) with TF-IDF, and contrast Naive Bayes with Logistic Regression.
+        - **Objective:** Classify text reviews into predefined classes.
         - **Key Techniques:** Bag-of-Words, TF-IDF, Naive Bayes, Logistic Regression.
-        - **Tools:** scikit-learn.
+        - **Tools:** `scikit-learn`, `datasets`.
 
-    - [**Bag of Words vs. TF-IDF 🔍**](1.%20Basics/bow-vs-tfidf)  
-    Compare the Bag-of-Words and TF-IDF approaches for text representation and classification.
-        - **Objective:** Understand the differences between Bag-of-Words and TF-IDF.
-        - **Key Techniques:** Bag-of-Words, TF-IDF.
-        - **Tools:** scikit-learn.
 2. **Intermediate** 🌿
     - [**Part-of-Speech Tagging: 🏷️**](2.%20Intermediate/part-of-speech-tagging)  
     Implement a part-of-speech tagger using Hidden Markov Models (HMMs) and the Viterbi algorithm.
         - **Objective:** Assign part-of-speech tags to words in a sentence.
         - **Key Techniques:** Hidden Markov Models, Viterbi Algorithm.
-        - **Tools:** NLTK.
+        - **Tools:** `NLTK`.
     - [**Named Entity Recognition: 🏷️**](2.%20Intermediate/named-entity-recognition)  
     Develop a named entity recognition (NER) system using conditional random fields (CRFs) and evaluate its performance.
         - **Objective:** Identify named entities (e.g., persons, organizations, locations) in text.
         - **Key Techniques:** Conditional Random Fields (CRFs).
-        - **Tools:** scikit-learn, CRFsuite.
+        - **Tools:** `scikit-learn`, `CRFsuite`.
     - [**Question Answering: ❓**](2.%20Intermediate/question-answering)  
     Create a question answering system using a simple heuristic approach and evaluate its effectiveness.
         - **Objective:** Generate answers to questions based on a given context.
         - **Key Techniques:** Heuristic Search, Text Similarity.
-        - **Tools:** spaCy.
+        - **Tools:** `spaCy`.
     - [**Sentiment Analysis with RNNs, LSTMs, GRUs, and CNNs: 📈**](2.%20Intermediate/sentiment-analysis)  
     Perform sentiment analysis on text data using recurrent neural networks (RNNs), long short-term memory (LSTM) networks, gated recurrent units (GRUs), and convolutional neural networks (CNNs).
         - **Objective:** Predict the sentiment (positive, negative, neutral) of text data.
         - **Key Techniques:** RNNs, LSTMs, GRUs, CNNs.
-        - **Tools:** PyTorch.
+        - **Tools:** `PyTorch`.
 
 3. **Advanced** 🚀
     - [**Transformers: 🤖**](3.%20Advanced/transformers)  
     Implement the transformer architecture from scratch and explore its applications.
         - **Objective:** Understand the architecture and working of transformer models.
         - **Key Techniques:** Self-Attention Mechanism, Positional Encoding, Multi-Head Attention.
-        - **Tools:** Pytorch.
+        - **Tools:** `Pytorch`.
     - [**BERT: 🤗**](3.%20Advanced/bert)  
     Explore BERT (Bidirectional Encoder Representations from Transformers), one of the most popular transformer models, and fine-tune a pre-trained BERT model for text classification.
         - **Objective:** Fine-tune a pre-trained BERT model for text classification tasks.
         - **Key Techniques:** BERT, Tokenization, Attention Mechanism, Transfer Learning.
-        - **Tools:** Hugging Face Transformers, PyTorch.
+        - **Tools:** `Hugging Face Transformers`, `PyTorch`.
     - [**GPT: 🧠**](3.%20Advanced/gpt)  
     Discover GPT (Generative Pre-trained Transformer), a state-of-the-art language model, and generate text using a pre-trained GPT model.
         - **Objective:** Generate text using a pre-trained GPT model.
         - **Key Techniques:** GPT, Autoregressive Language Modeling.
-        - **Tools:** Hugging Face Transformers, PyTorch.
+        - **Tools:** `Hugging Face Transformers`, `PyTorch`.
     - [**Neural Machine Translation: 🌍**](3.%20Advanced/neural-machine-translation)  
     Build a neural machine translation (NMT) system using an encoder-decoder architecture with attention mechanism.
         - **Objective:** Translate text from one language to another using neural networks.
         - **Key Techniques:** Encoder-Decoder Architecture, Attention Mechanism.
-        - **Tools:** PyTorch.
+        - **Tools:** `PyTorch`.
     - [**Multi-Task Learning: 🎓**](3.%20Advanced/multi-task-learning)  
     Implement a multi-task learning model that jointly learns multiple NLP tasks, such as part-of-speech tagging, named entity recognition, and text classification.
         - **Objective:** Train a single model to perform multiple NLP tasks simultaneously.
         - **Key Techniques:** Multi-Task Learning, Shared Representations.
-        - **Tools:** PyTorch.
+        - **Tools:** `PyTorch`.
 
 <!-- ## Advanced Language Model
 
