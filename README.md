@@ -64,19 +64,27 @@ You're all set! 🎉
     - [**Text Preprocessing: 🧹**](1.%20Basics/text-preprocessing)  
     Learn essential text preprocessing techniques such as tokenization, stemming, lemmatization, stop word removal, and text normalization.
         - **Objective:** Transform raw text into a format suitable for NLP tasks.
-        - **Key Techniques:** Tokenization, Stopword Removal, Stemming, Lemmatization.
-        - **Tools:** NLTK, spaCy.
+        - **Key Techniques:** Tokenization, Stopword Removal, Stemming, Lemmatization, Text Normalization, and Augmentation.
+        - **Tools:** NLTK.
+
+    - [**Text Augmentation: 🧹**](1.%20Basics/text-augmentation)  
+    Augment text data using various techniques such as synonym replacement, random insertion, random deletion, and random swap.
+        - **Objective:** Increase the size and diversity of text data for training NLP models.
+        - **Key Techniques:** Synonym  Replacement, Random Insertion, Random Deletion, Random Swap.
+        - **Tools:** NLTK.
 
     - [**Word Embeddings: 🧠**](1.%20Basics/word-embeddings)  
     Explore word embeddings and their applications in NLP, including word2vec, GloVe, and fastText.
         - **Objective:** Represent words as dense vectors to capture semantic relationships.
         - **Key Techniques:** Word2Vec, GloVe, fastText.
-        - **Tools:** Gensim, spaCy.
+        - **Tools:** Gensim, Glove, Scikit-learn, PCA.
+
     - [**Text Classification: 📊**](1.%20Basics/text-classification)  
     Build a text classifier using machine learning algorithms and evaluate its performance on a dataset.
         - **Objective:** Classify text documents into predefined categories.
         - **Key Techniques:** Bag-of-Words, TF-IDF, Naive Bayes, Logistic Regression.
         - **Tools:** scikit-learn.
+
     - [**Bag of Words vs. TF-IDF 🔍**](1.%20Basics/bow-vs-tfidf)  
     Compare the Bag-of-Words and TF-IDF approaches for text representation and classification.
         - **Objective:** Understand the differences between Bag-of-Words and TF-IDF.
