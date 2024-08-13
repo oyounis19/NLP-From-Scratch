@@ -100,7 +100,7 @@ You're all set! 🎉
     Create a question answering system using a simple heuristic approach and evaluate its effectiveness.
         - **Objective:** Generate answers to questions based on a given context.
         - **Key Techniques:** Heuristic Search, Text Similarity.
-        - **Tools:** `spaCy`.
+        - **Tools:** `spaCy`, `TF-IDF`, `Cosine Similarity`.
     - [**Sentiment Analysis with RNNs, LSTMs, GRUs, and CNNs: 📈**](2.%20Intermediate/sentiment-analysis)  
     Perform sentiment analysis on text data using recurrent neural networks (RNNs), long short-term memory (LSTM) networks, gated recurrent units (GRUs), and convolutional neural networks (CNNs).
         - **Objective:** Predict the sentiment (positive, negative, neutral) of text data.
