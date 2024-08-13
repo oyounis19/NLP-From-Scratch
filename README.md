@@ -117,12 +117,22 @@ You're all set! 🎉
     Explore BERT (Bidirectional Encoder Representations from Transformers), one of the most popular transformer models, and fine-tune a pre-trained BERT model for text classification.
         - **Objective:** Fine-tune a pre-trained BERT model for text classification tasks.
         - **Key Techniques:** BERT, Tokenization, Attention Mechanism, Transfer Learning.
-        - **Tools:** `Hugging Face Transformers`, `PyTorch`.
+        - **Tools:** `transformers🤗`,`PyTorch`.
     - [**GPT: 🧠**](3.%20Advanced/gpt)  
     Discover GPT (Generative Pre-trained Transformer), a state-of-the-art language model, and generate text using a pre-trained GPT model.
         - **Objective:** Generate text using a pre-trained GPT model.
         - **Key Techniques:** GPT, Autoregressive Language Modeling.
-        - **Tools:** `Hugging Face Transformers`, `PyTorch`.
+        - **Tools:** `transformers🤗`, `PyTorch`.
+    - [**Text Summarization: 📝**](3.%20Advanced/text-summarization)  
+    Build an abstractive text summarization model using a sequence-to-sequence architecture with attention mechanism.
+        - **Objective:** Generate a concise summary of a given text document.
+        - **Key Techniques:** Sequence-to-Sequence Architecture, Attention Mechanism.
+        - **Tools:** `PyTorch`, `transformers🤗`.
+    - [**Few-Shot Learning: 🎓**](3.%20Advanced/few-shot-learning)  
+    Implement a few-shot learning model that can perform text classification with limited labeled data.
+        - **Objective:** Train a model to perform text classification with few labeled examples.
+        - **Key Techniques:** Few-Shot Learning, Meta-Learning, Prototypical Networks.
+        - **Tools:** `PyTorch`, `transformers🤗`
     - [**Neural Machine Translation: 🌍**](3.%20Advanced/neural-machine-translation)  
     Build a neural machine translation (NMT) system using an encoder-decoder architecture with attention mechanism.
         - **Objective:** Translate text from one language to another using neural networks.
@@ -133,6 +143,23 @@ You're all set! 🎉
         - **Objective:** Train a single model to perform multiple NLP tasks simultaneously.
         - **Key Techniques:** Multi-Task Learning, Shared Representations.
         - **Tools:** `PyTorch`.
+    - [**Vision Transformers: 🌆**](3.%20Advanced/vision-transformers)  
+    Explore Vision Transformers (ViTs) and apply them to image classification tasks.
+        - **Objective:** Understand the architecture and working of Vision Transformers.
+        - **Key Techniques:** Self-Attention Mechanism, Patch Embeddings, Positional Encoding.
+        - **Tools:** `PyTorch`.
+    - [**Retrieval-Augmented Generation (RAG): 🔄**](3.%20Advanced/rag)
+    Implement a Retrieval-Augmented Generation (RAG) system that combines a retriever and a generator to enhance the model's capabilities using external knowledge.
+        - **Objective:** Integrate retrieval-based and generation-based models for improved performance.
+        - **Key Techniques:** Retrieval-Augmented Generation, Dense Retrieval, Transformer Models.
+        - **Tools:** `transformers🤗`, `PyTorch`.
+    - [**OpenAI API Exploration: 🤖**](3.%20Advanced/openai-api-exploration)
+    Explore the OpenAI API and build a simple chatbot using the GPT-3 model.
+        - **Objective:** Understand the capabilities of the OpenAI API and build a chatbot.
+        - **Key Techniques:** GPT-3, Chatbot Development.
+        - **Tools:** `OpenAI API`.
+
+Each project contains detailed instructions, code examples, and references to help you understand and implement the concepts effectively. Exploring is what makes learning fun, so feel free to experiment and modify the code to suit your needs! 🚀🌟
 
 <!-- ## Advanced Language Model
 
