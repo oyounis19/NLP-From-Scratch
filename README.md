@@ -109,10 +109,10 @@ You're all set! 🎉
 
 3. **Advanced** 🚀
     - [**Transformers: 🤖**](3.%20Advanced/transformers)  
-    Implement the transformer architecture from scratch and explore its applications.
+    Implement the transformer architecture from scratch and explore its applications (e.g., text classification, language modeling, machine translation).
         - **Objective:** Understand the architecture and working of transformer models.
-        - **Key Techniques:** Self-Attention Mechanism, Positional Encoding, Multi-Head Attention.
-        - **Tools:** `Pytorch`.
+        - **Key Techniques:** Self-Attention Mechanism, Positional Encoding, Multi-Head Attention, Encoder-Decoder Architecture.
+        - **Tools:** `Pytorch`, `datasets`.
     - [**BERT: 🤗**](3.%20Advanced/bert)  
     Explore BERT (Bidirectional Encoder Representations from Transformers), one of the most popular transformer models, and fine-tune a pre-trained BERT model for text classification.
         - **Objective:** Fine-tune a pre-trained BERT model for text classification tasks.
