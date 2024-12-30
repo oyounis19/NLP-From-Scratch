@@ -123,6 +123,11 @@ You're all set! 🎉
         - **Objective:** Generate text using a pre-trained GPT model.
         - **Key Techniques:** GPT, Autoregressive Language Modeling.
         - **Tools:** `transformers🤗`, `PyTorch`.
+    - [**Fine-Tuning LLMs: 🎨**](3.%20Advanced/fine-tuning-llms)
+    Fine-tuning example for LLMs  with various techniques like (Full Fine-tuning, PEFT, LORA, and QLORA).
+        - **Objective:** Fine-tune a pre-trained LLM with multiple techniques.
+        - **Key Techniques:** Full Fine-tuning, PEFT, LORA, QLORA.
+        - **Tools:** `transformers🤗`, `PyTorch`.
     - [**Text Summarization: 📝**](3.%20Advanced/text-summarization)  
     Build an abstractive text summarization model using a sequence-to-sequence architecture with attention mechanism.
         - **Objective:** Generate a concise summary of a given text document.
@@ -149,10 +154,15 @@ You're all set! 🎉
         - **Key Techniques:** Self-Attention Mechanism, Patch Embeddings, Positional Encoding.
         - **Tools:** `PyTorch`.
     - [**Retrieval-Augmented Generation (RAG): 🔄**](3.%20Advanced/rag)
-    Implement a Retrieval-Augmented Generation (RAG) system that combines a retriever and a generator to enhance the model's capabilities using external knowledge.
+    Implement different Retrieval-Augmented Generation (RAG) systems that combines a retriever and a generator to enhance the model's capabilities using external knowledge.
         - **Objective:** Integrate retrieval-based and generation-based models for improved performance.
-        - **Key Techniques:** Retrieval-Augmented Generation, Dense Retrieval, Transformer Models.
+        - **Key Techniques:** RAG, Fusion, Agentic, ReAct(Reasoning-Action), MEMO, Graph, ...
         - **Tools:** `transformers🤗`, `PyTorch`.
+    - [**Langchain Exploration: 🌐**](3.%20Advanced/langchain-exploration)
+    Explore Langchain/LangGraph framework for building agentic workflows.
+        - **Objective:** Understand the capabilities of the Langchain framework.
+        - **Key Techniques:** Langchain, LangGraph, Agentic Workflows.
+        - **Tools:** `Langchain`, `LangGraph`.
     - [**OpenAI API Exploration: 🤖**](3.%20Advanced/openai-api-exploration)
     Explore the OpenAI API and build a simple chatbot using the GPT-3 model.
         - **Objective:** Understand the capabilities of the OpenAI API and build a chatbot.
