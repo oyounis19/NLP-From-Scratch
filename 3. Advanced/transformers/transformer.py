@@ -4,9 +4,9 @@ import torch.nn.functional as F
 import math
 
 """
-Transformer model from scratch.
+Transformer architecture from scratch.
 
-The Transformer model consists of an encoder and a decoder. The encoder processes the input sequence
+The Transformer architecture consists of an encoder and a decoder. The encoder processes the input sequence
 and generates a fixed-size representation of the input. The decoder takes this representation and
 generates the output sequence.
 """
@@ -14,8 +14,7 @@ generates the output sequence.
 class PositionalEncoding(nn.Module):
     """
     Unlike the original paper which uses sinusoidal positional encodings (fixed),
-    this implementation uses learned positional embeddings. This is because 
-    learned positional embeddings have been shown to be more effective in practice (e.g. GPT, BERT).
+    this implementation uses learned positional embeddings. Which have shown to be more effective in practice (e.g. GPT, BERT).
     """
     def __init__(self, max_len, embed_dim):
         super(PositionalEncoding, self).__init__()
@@ -54,7 +53,7 @@ class MultiHeadAttention(nn.Module):
         # Scaled dot-product attention
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_k)
 
-        if mask is not None: # Mask padding tokens if provided
+        if mask is not None: # Mask padding tokens if provided (for decoder self-attention)
             scores = scores.masked_fill(mask == 0, -1e10)
 
         attn = F.softmax(scores, dim=-1)
@@ -88,7 +87,7 @@ class EncoderLayer(nn.Module):
 
     def forward(self, x, mask=None):
         attn_output = self.self_attn(x, x, x, mask)
-        x = self.layernorm1(x + self.dropout(attn_output)) # Skip connection
+        x = self.layernorm1(x + self.dropout(attn_output)) # Skip connectionz
         ffn_output = self.ffn(x)
         x = self.layernorm2(x + self.dropout(ffn_output)) # Skip connection
         return x
@@ -118,7 +117,7 @@ class DecoderLayer(nn.Module):
 class Encoder(nn.Module):
     def __init__(self, num_layers, d_model, num_heads, d_ff, vocab_size, max_len, pad_idx=0, dropout=0.1):
         super(Encoder, self).__init__()
-        self.embedding = nn.Embedding(vocab_size, d_model)
+        self.embedding = nn.Embedding(vocab_size, d_model, padding_idx=pad_idx)
         self.pos_encoding = PositionalEncoding(max_len, d_model)
         self.layers = nn.ModuleList([EncoderLayer(d_model, num_heads, d_ff, dropout) for _ in range(num_layers)])
         self.dropout = nn.Dropout(dropout)
@@ -147,51 +146,3 @@ class Decoder(nn.Module):
         for layer in self.layers:
             x = layer(x, enc_output, src_mask, tgt_mask)
         return x
-
-
-class TransformerClassifier(nn.Module):
-    """
-    Transformer model (Encoder-only) for text classification.
-    """
-    def __init__(self, num_layers, d_model, num_heads, d_ff, vocab_size, max_len, num_classes, dropout=0.1):
-        super(TransformerClassifier, self).__init__()
-        self.encoder = Encoder(num_layers, d_model, num_heads, d_ff, vocab_size, max_len, dropout)
-        self.fc_out = nn.Linear(d_model, num_classes)
-
-    def forward(self, src, src_mask=None):
-        enc_output = self.encoder(src, src_mask)
-        pooled_output = enc_output.mean(dim=1)
-        output = self.fc_out(pooled_output)
-        return output
-
-
-class TransformerGenerator(nn.Module):
-    """
-    Transformer model (Decoder-only) for text generation.
-    """
-    def __init__(self, num_layers, d_model, num_heads, d_ff, vocab_size, max_len, dropout=0.1):
-        super(TransformerGenerator, self).__init__()
-        self.decoder = Decoder(num_layers, d_model, num_heads, d_ff, vocab_size, max_len, dropout)
-        self.fc_out = nn.Linear(d_model, vocab_size)
-
-    def forward(self, tgt, tgt_mask=None):
-        dec_output = self.decoder(tgt, None, None, tgt_mask)
-        output = self.fc_out(dec_output)
-        return output
-
-
-class TransformerTranslator(nn.Module):
-    """
-    Transformer model (Encoder-Decoder) for translation tasks.
-    """
-    def __init__(self, num_layers, d_model, num_heads, d_ff, vocab_size_src, vocab_size_tgt, max_len, dropout=0.1):
-        super(TransformerTranslator, self).__init__()
-        self.encoder = Encoder(num_layers, d_model, num_heads, d_ff, vocab_size_src, max_len, dropout)
-        self.decoder = Decoder(num_layers, d_model, num_heads, d_ff, vocab_size_tgt, max_len, dropout)
-        self.fc_out = nn.Linear(d_model, vocab_size_tgt)
-
-    def forward(self, src, tgt, src_mask=None, tgt_mask=None):
-        enc_output = self.encoder(src, src_mask)
-        dec_output = self.decoder(tgt, enc_output, src_mask, tgt_mask)
-        output = self.fc_out(dec_output)
-        return output
